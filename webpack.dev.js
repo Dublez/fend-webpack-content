@@ -5,11 +5,10 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 module.exports = {
     entry: './src/client/index.js',
     devtool: 'source-map',
+    mode: 'development',
     module: {
         rules: [
             {
-                mode: 'development',
-                devtool: 'source-map',
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
